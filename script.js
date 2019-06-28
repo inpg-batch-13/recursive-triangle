@@ -1,10 +1,13 @@
 function recursiveTriangle(n) {
-  // your code here
-
+  if(n === 1) {
+    console.log("*")
+  } else {
+    console.log('*'.repeat(n));
+    return recursiveTriangle(n - 1);
+  }
 }
 
-// test case
-recursiveTriangle(5)
+console.log(recursiveTriangle(5))
 // *****
 // ****
 // ***
